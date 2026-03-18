@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bank App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 22px;
+    }
+
+    input {
+      font-size: 18px;
+      padding: 8px;
+      width: 200px;
+    }
+
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Simple Bank App</h1>
+
+  <p>Balance: Rs.<span id="balance">1000</span></p>
+
+  <br>
+
+  <input type="number" id="amount" placeholder="Enter amount" />
+
+  <br>
+
+  <button onclick="deposit()">Deposit</button>
+  <button onclick="withdraw()">Withdraw</button>
+  <button onclick="checkBalance()">Check Balance</button>
+
+  <p id="message"></p>
+
+  <script src="bank.js"></script>
+
+</body>
+</html>
